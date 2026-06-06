@@ -17,7 +17,7 @@ Maho uses a custom HTTP response layer that bypasses Symfony's header emission (
 
 **2. Missing conservative cache default.** Symfony's `ResponseHeaderBag::computeCacheControlValue()` normally injects `Cache-Control: no-cache, private` as a safe default. Since Maho bypasses Symfony's send path, this default is never applied, potentially exposing session-specific content to shared caches.
 
-This module restores the OpenMage behavior by adding the appropriate headers. It may be required by custom themes that rely on dynamic content (cart sidebar, checkout state) and need to prevent stale data on browser back/forward navigation.
+This module restores the OpenMage behavior by adding the appropriate headers. It may be required by custom themes that rely on dynamic content (cart sidebar, checkout state) and need to prevent stale data on browser back/forward navigation, especially when the theme does not implement the `pageshow` event (see [PR #991](https://github.com/MahoCommerce/maho/pull/991)) to handle bfcache restore on the client side.
 
 ## Requirements
 
