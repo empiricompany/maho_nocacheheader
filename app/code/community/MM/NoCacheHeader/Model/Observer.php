@@ -16,6 +16,7 @@ class MM_NoCacheHeader_Model_Observer
             return;
         }
 
-        $response->setHeader('Cache-Control', 'no-cache, private', true);
+        $response->setHeader('Cache-Control', 'no-store, no-cache, must-revalidate', true);
+        $response->setHeader('Pragma', 'no-cache', true);
     }
 }
