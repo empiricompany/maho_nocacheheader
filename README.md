@@ -7,6 +7,8 @@
 
 Adds `Cache-Control: no-store, no-cache, must-revalidate` and `Pragma: no-cache` headers globally on all frontend pages, restoring the default behavior from OpenMage. Configurable via admin.
 
+See the related issue: [#992 — Response send path bypasses Symfony's default Cache-Control; decide policy for dynamic GET/JSON responses](https://github.com/MahoCommerce/maho/issues/992)
+
 ## Why is this needed?
 
 Maho uses a custom HTTP response layer that bypasses Symfony's header emission (see [issue #990](https://github.com/MahoCommerce/maho/issues/990)). Unlike OpenMage, Maho does not send any `Cache-Control` header by default. This causes two problems:
