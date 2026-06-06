@@ -1,7 +1,7 @@
 <?php
 class MM_NoCacheHeader_Model_Observer
 {
-    #[Maho\Config\Observer('controller_front_send_response_before')]
+    #[Maho\Config\Observer('controller_front_send_response_before', area: 'frontend')]
     public function addNoCacheHeader(\Maho\Event\Observer $observer): void
     {
         if (!Mage::getStoreConfigFlag('web/nocacheheader/add_nocache_header')) {
@@ -11,8 +11,8 @@ class MM_NoCacheHeader_Model_Observer
         $response = $observer->getFront()->getResponse();
         $request = Mage::app()->getRequest();
 
-        // Frontend + non-AJAX only
-        if ($request->isXmlHttpRequest() || Mage::app()->getStore()->isAdmin()) {
+        // Skip AJAX requests
+        if ($request->isXmlHttpRequest()) {
             return;
         }
 
