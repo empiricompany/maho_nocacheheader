@@ -5,9 +5,7 @@
 ![PHP](https://img.shields.io/badge/php-%3E%3D8.3-8892BF)
 ![PHPStan Level](https://img.shields.io/badge/PHPStan-level%208-brightgreen)
 
-Adds `Cache-Control: no-cache, private` header globally on all frontend pages, restoring the default behavior from OpenMage. Configurable via admin.
-
-Useful to prevent stale dynamic content (cart sidebar, checkout state) when the browser serves pages from bfcache (back-forward cache). With `no-cache` the browser can still use bfcache but must revalidate with the server on restore.
+Adds `Cache-Control: no-store, no-cache, must-revalidate` and `Pragma: no-cache` headers globally on all frontend pages, restoring the default behavior from OpenMage. Configurable via admin.
 
 ## Requirements
 
@@ -28,7 +26,7 @@ Clear the cache after installation:
 
 ## Configuration
 
-Go to *System → Configuration → Web → Cache-Control Header* and set *Add Cache-Control: no-cache, private header* to **Yes**.
+Go to *System → Configuration → Web → Cache-Control Header* and set *Add Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache headers* to **Yes**.
 
 The setting applies to frontend only — admin panel is not affected.
 

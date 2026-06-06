@@ -1,3 +1,3 @@
 "Cache-Control Header","Cache-Control Header"
-"Add Cache-Control: no-cache, private header","Add Cache-Control: no-cache, private header"
-"When enabled, adds Cache-Control: no-cache, private to all frontend pages only. Restores the default behavior from OpenMage. Does NOT affect the admin panel.","When enabled, adds Cache-Control: no-cache, private to all frontend pages only. Restores the default behavior from OpenMage. Does NOT affect the admin panel."
+"Add Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache headers","Add Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache headers"
+"When enabled, adds Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache to all frontend pages only. Restores the default behavior from OpenMage. Does NOT affect the admin panel.","When enabled, adds Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache to all frontend pages only. Restores the default behavior from OpenMage. Does NOT affect the admin panel."

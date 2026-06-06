@@ -11,8 +11,8 @@
                     <show_in_store>1</show_in_store>
                     <fields>
                         <add_nocache_header translate="label comment">
-                            <label>Add Cache-Control: no-cache, private header</label>
-                            <comment>When enabled, adds Cache-Control: no-cache, private to all frontend pages only. Restores the default behavior from OpenMage. Does NOT affect the admin panel.</comment>
+                            <label>Add Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache headers</label>
+                            <comment>When enabled, adds Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache to all frontend pages only. Restores the default behavior from OpenMage. Does NOT affect the admin panel.</comment>
                             <frontend_type>select</frontend_type>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                             <sort_order>10</sort_order>
