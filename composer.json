@@ -1,0 +1,24 @@
+{
+    "name": "mm/maho-nocacheheader",
+    "version": "0.1.0",
+    "description": "Adds Cache-Control: no-cache, private header globally on all frontend pages, restoring OpenMage default behavior. Configurable via admin.",
+    "license": "OSL-3.0",
+    "type": "maho-module",
+    "require": {
+        "php": ">=8.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "*",
+        "mahocommerce/maho": "*",
+        "mahocommerce/maho-phpstan-plugin": "*",
+        "phpstan/phpstan": "*",
+        "phpstan/phpstan-deprecation-rules": "*",
+        "phpstan/phpstan-strict-rules": "*",
+        "rector/rector": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "mahocommerce/maho-composer-plugin": true
+        }
+    }
+}

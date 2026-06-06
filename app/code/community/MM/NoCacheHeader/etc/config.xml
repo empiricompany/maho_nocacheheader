@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MM_NoCacheHeader>
+            <version>0.1.0</version>
+        </MM_NoCacheHeader>
+    </modules>
+    <global>
+        <models>
+            <nocacheheader>
+                <class>MM_NoCacheHeader_Model</class>
+            </nocacheheader>
+        </models>
+        <helpers>
+            <nocacheheader>
+                <class>MM_NoCacheHeader_Helper</class>
+            </nocacheheader>
+        </helpers>
+    </global>
+</config>

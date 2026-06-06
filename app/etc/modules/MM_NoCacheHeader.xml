@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MM_NoCacheHeader>
+            <active>true</active>
+            <codePool>community</codePool>
+        </MM_NoCacheHeader>
+    </modules>
+</config>
