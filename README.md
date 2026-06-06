@@ -17,7 +17,7 @@ Useful to prevent stale dynamic content (cart sidebar, checkout state) when the 
 ## Installation
 
 ```bash
-composer require mm/maho-nocacheheader
+composer require empiricompany/maho-nocacheheader
 ```
 
 Clear the cache after installation:
