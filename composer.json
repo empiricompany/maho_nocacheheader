@@ -1,7 +1,7 @@
 {
     "name": "empiricompany/maho-nocacheheader",
     "version": "0.1.0",
-    "description": "Adds Cache-Control: no-cache, private header globally on all frontend pages, restoring OpenMage default behavior. Configurable via admin.",
+    "description": "Adds Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache headers globally on all frontend pages, restoring OpenMage default behavior. Configurable via admin.",
     "license": "OSL-3.0",
     "type": "maho-module",
     "require": {
