@@ -1,6 +1,5 @@
 {
     "name": "empiricompany/maho-nocacheheader",
-    "version": "0.1.0",
     "description": "Adds Cache-Control: no-store, no-cache, must-revalidate and Pragma: no-cache headers globally on all frontend pages, restoring OpenMage default behavior. Configurable via admin.",
     "license": "OSL-3.0",
     "type": "maho-module",
@@ -19,6 +18,20 @@
     "config": {
         "allow-plugins": {
             "mahocommerce/maho-composer-plugin": true
+        },
+        "platform": {
+            "php": "8.3"
         }
+    },
+    "scripts": {
+        "cs": "vendor/bin/php-cs-fixer fix --dry-run --diff",
+        "cs-fix": "vendor/bin/php-cs-fixer fix",
+        "phpstan": "vendor/bin/phpstan analyse",
+        "rector": "vendor/bin/rector --dry-run",
+        "check": [
+            "@cs",
+            "@phpstan",
+            "@rector"
+        ]
     }
 }

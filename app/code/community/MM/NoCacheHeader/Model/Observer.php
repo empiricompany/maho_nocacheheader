@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 class MM_NoCacheHeader_Model_Observer
 {
     #[Maho\Config\Observer('controller_front_send_response_before', area: 'frontend')]
